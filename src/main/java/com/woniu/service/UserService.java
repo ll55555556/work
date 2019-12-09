@@ -1,7 +1,9 @@
 package com.woniu.service;
 
-public class UserService {
+import com.woniu.pojo.User;
 
-	private int one;
+public interface UserService {
+
+	void save(User user);
 	
 }
