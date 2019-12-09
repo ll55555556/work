@@ -1,10 +1,15 @@
 package com.woniu.dao;
 
+import java.util.List;
+
 import com.woniu.pojo.User;
 
-public class UserDao {
+public interface UserDao {
    //dao
-	public void save(User user) {
-		System.out.println("UserDao.save()");
-	}
+	 void save(User user);
+	 void update(User user);
+	 void delete(Integer userId);
+	 User findOne(Integer userId);
+	 List<User> findAll();
+	
 }
