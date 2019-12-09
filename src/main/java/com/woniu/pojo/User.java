@@ -35,5 +35,6 @@ public class User {
 		return "User [userId=" + userId + ", userName=" + userName + ", userPwd=" + userPwd + "]";
 	}
 	
+	
 
 }
