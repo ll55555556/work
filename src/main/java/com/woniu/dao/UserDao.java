@@ -5,7 +5,7 @@ import java.util.List;
 import com.woniu.pojo.User;
 
 public interface UserDao {
-   //dao
+   //daossss
 	 void save(User user);
 	 void update(User user);
 	 void delete(Integer userId);
