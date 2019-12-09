@@ -35,7 +35,7 @@ public class User {
 		return "User [userId=" + userId + ", userName=" + userName + ", userPwd=" + userPwd + "]";
 	}
 	
-	
+	private String abc;
 	
 
 }
