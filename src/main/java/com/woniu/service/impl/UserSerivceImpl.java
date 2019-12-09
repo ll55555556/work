@@ -41,7 +41,7 @@ public class UserSerivceImpl implements UserService {
 	}
 
 	@Override
-	public List<User> findAll(User user) {
+	public List<User> findAll() {
 		// TODO Auto-generated method stub
 		List<User> list=userDao.findAll();
 		return list;
