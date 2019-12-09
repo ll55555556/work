@@ -14,5 +14,20 @@
 		<property name="username" value="root"></property>
 		<property name="password" value="kk1036588"></property>
 	</bean>
+	<!-- SqlSessionFactory -->
+	<bean id="SqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="typeAliasesPackage" value="com.woniu.pojo"></property>
+	</bean>
+	<!-- 扫mapper -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.woniu.dao"></property>
+	</bean>
+	<!-- 事务管理 -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<!-- 自动事务 -->
+	<tx:annotation-driven/>
 
 </beans>
