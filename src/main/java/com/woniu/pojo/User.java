@@ -1,7 +1,7 @@
 package com.woniu.pojo;
 
 public class User {
-	
+
 	private Integer userId;
 	private String userName;
 	private String userPwd;
@@ -34,8 +34,6 @@ public class User {
 	public String toString() {
 		return "User [userId=" + userId + ", userName=" + userName + ", userPwd=" + userPwd + "]";
 	}
-	
-	private String abc;
 	
 
 }
