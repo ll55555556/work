@@ -1,7 +1,7 @@
 package com.woniu.pojo;
 
 public class User {
-	
+	//用户类
 	private Integer userId;
 	private String userName;
 	private String userPwd;
