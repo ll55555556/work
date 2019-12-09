@@ -30,8 +30,10 @@ public class User {
 		this.userName = userName;
 		this.userPwd = userPwd;
 	}
-	
-	
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", userName=" + userName + ", userPwd=" + userPwd + "]";
+	}
 	
 
 }
