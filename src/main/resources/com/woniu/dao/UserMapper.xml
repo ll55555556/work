@@ -5,7 +5,7 @@
 		insert into user values(#{userId},#{userName},#{userPwd})
 	</insert>
 	<delete id="delete">
-		delete from dept where userId=#{userId}
+		delete from user where userId=#{userId}
 	</delete>
 	<delete id="update">
 		update user set userName=#{userName},userPwd=#{userPwd} where userId=#{userId} 
