@@ -20,7 +20,7 @@ public class UserController {
 	@RequestMapping("save")
 	public String save(User user){
 		 userService.save(user);
-		return "index";
+		return "redirect:findAll.do";
 	}
 	
 //	@RequestMapping("update")
@@ -39,11 +39,11 @@ public class UserController {
 //		return "index";
 //	}
 //	
-//	@RequestMapping("findAll")
-//	public String findAll(HttpServletRequest req) {
-//		List<User> users = userService.findAll();
-//		req.setAttribute("users", users);
-//		return "tses";
-//	}
+	@RequestMapping("findAll")
+	public String findAll(HttpServletRequest req) {
+		List<User> users = userService.findAll();
+		req.setAttribute("users", users);
+		return "userList";
+	}
 	
 }
