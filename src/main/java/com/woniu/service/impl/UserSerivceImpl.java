@@ -22,9 +22,9 @@ public class UserSerivceImpl implements UserService {
 	}
 
 	@Override
-	public void delete(User user) {
+	public void delete(Integer uid) {
 		// TODO Auto-generated method stub
-		userDao.delete(user.getUserId());
+		userDao.delete(uid);
 	}
 
 	@Override

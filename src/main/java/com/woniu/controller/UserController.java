@@ -26,27 +26,27 @@ public class UserController {
 		
 	}
 	
-//	@RequestMapping("update")
-//	public String update(User user){
-//		userService.update(user);
-//		return "index";
-//	}
-//	@RequestMapping("delete")
-//	public String delete(Integer userId){
-//		userService.delete(userId);
-//		return "index";
-//	}
-//	@RequestMapping("findOne")
-//	public String findOne(Integer userId,HttpServletRequest req){
-//		req.setAttribute("dept", userService.findOne(userId));
-//		return "index";
-//	}
-//	
-//	@RequestMapping("findAll")
-//	public String findAll(HttpServletRequest req) {
-//		List<User> users = userService.findAll();
-//		req.setAttribute("users", users);
-//		return "tses";
-//	}
+	@RequestMapping("update")
+	public String update(User user){
+		userService.update(user);
+		return "index";
+	}
+	@RequestMapping("delete")
+	public String delete(Integer userId){
+		userService.delete(userId);
+		return "index";
+	}
+	@RequestMapping("findOne")
+	public String findOne(Integer userId,HttpServletRequest req){
+		req.setAttribute("dept", userService.findOne(userId));
+		return "index";
+	}
+	
+	@RequestMapping("findAll")
+	public String findAll(HttpServletRequest req) {
+		List<User> users = userService.findAll();
+		req.setAttribute("users", users);
+		return "tses";
+	}
 	
 }
