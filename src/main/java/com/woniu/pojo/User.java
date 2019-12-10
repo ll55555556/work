@@ -1,11 +1,15 @@
 package com.woniu.pojo;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable{
 
 	private Integer userId;
 	private String userName;
 	private String userPwd;
-	
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
 	public String getUserPwd() {
 		return userPwd;
 	}
