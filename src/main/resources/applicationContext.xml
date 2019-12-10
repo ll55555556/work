@@ -10,14 +10,15 @@
 	<context:component-scan base-package="com.woniu.service"></context:component-scan>
 	<!-- 数据源 -->
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
-		<property name="url" value="jdbc:mysql://localhost:3306/user?characterEncoding=utf-8"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/user?characterEncoding=utf8"></property>
 		<property name="username" value="root"></property>
-		<property name="password" value="kk1036588"></property>
+		<property name="password" value="root"></property>
 	</bean>
 	<!-- SqlSessionFactory -->
 	<bean id="SqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"></property>
 		<property name="typeAliasesPackage" value="com.woniu.pojo"></property>
+		<property name="mapperLocations" value="classpath:com/woniu/dao/*.xml"></property>
 	</bean>
 	<!-- 扫mapper -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
