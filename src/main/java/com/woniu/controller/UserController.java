@@ -22,6 +22,8 @@ public class UserController {
 		 userService.save(user);
 		return "index";
 		
+		
+		
 	}
 	
 //	@RequestMapping("update")
