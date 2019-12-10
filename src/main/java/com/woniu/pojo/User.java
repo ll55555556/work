@@ -1,10 +1,13 @@
 package com.woniu.pojo;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable{
 
 	private Integer userId;
 	private String userName;
 	private String userPwd;
+	
 	
 	public String getUserPwd() {
 		return userPwd;
@@ -25,10 +28,12 @@ public class User {
 		this.userName = userName;
 	}
 	public User(Integer userId, String userName, String userPwd) {
-		super();
 		this.userId = userId;
 		this.userName = userName;
 		this.userPwd = userPwd;
+	}
+	
+	public User() {
 	}
 	@Override
 	public String toString() {
