@@ -6,6 +6,7 @@ public class User {
 	private String userName;
 	private String userPwd;
 	
+	
 	public String getUserPwd() {
 		return userPwd;
 	}
@@ -25,10 +26,12 @@ public class User {
 		this.userName = userName;
 	}
 	public User(Integer userId, String userName, String userPwd) {
-		super();
 		this.userId = userId;
 		this.userName = userName;
 		this.userPwd = userPwd;
+	}
+	
+	public User() {
 	}
 	@Override
 	public String toString() {
